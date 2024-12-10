@@ -1299,6 +1299,14 @@ textarea.form-input::-webkit-realizer {
   padding: 8px
 }
 
+.download-cv {
+  color: var(--orange-yellow-crayola);
+}
+
+.download-cv:hover {
+  text-decoration: underline;
+}
+
 
 /*MEDIA QUERIES*/
 
