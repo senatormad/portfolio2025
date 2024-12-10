@@ -548,8 +548,9 @@ article.active {
   margin-bottom: 10px;
 }
 
-.service-icon-box img {
+.service-icon-box svg {
   margin: auto;
+  fill: var(--orange-yellow-crayola);
 }
 
 .service-content-box {
@@ -726,8 +727,8 @@ article.active {
   padding: 8px;
 }
 
-.modal-img-wrapper > img {
-  display: none;
+.modal-img-wrapper > svg {
+  fill: var(--orange-yellow-crayola);
 }
 
 .modal-title {
@@ -1526,12 +1527,12 @@ textarea.form-input::-webkit-realizer {
     padding: 8px;
   }
 
-  .modal-img-wrapper > img {
+  .modal-img-wrapper > svg {
     display: block;
     position: relative;
-    /* flex-grow: 1; */
-    width: 35px;
+    width: 32px;
     top: 50px;
+    fill: var(--orange-yellow-crayola);
   }
 
   .clients-list {
@@ -1729,7 +1730,7 @@ textarea.form-input::-webkit-realizer {
     min-width: calc(50% - 15px);
   }
 
-  .modal-img-wrapper > img {
+  .modal-img-wrapper > svg {
     top: 20px;
   }
 
