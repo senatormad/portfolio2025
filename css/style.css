@@ -410,6 +410,10 @@ article.active {
   gap: 16px;
 }
 
+.contact-item.download-cv {
+  margin-bottom: 16px;
+}
+
 .contact-info {
   max-width: calc(100% - 46px);
   width: calc(100% - 46px);
@@ -1740,6 +1744,9 @@ textarea.form-input::-webkit-realizer {
   .blog-banner-box {
     height: 230px;
   }
+  .contact-item.download-cv {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1250px) {
@@ -1854,5 +1861,8 @@ textarea.form-input::-webkit-realizer {
 
   .timeline-text {
     max-width: 700px;
+  }
+  .contact-item.download-cv {
+    margin-bottom: 0;
   }
 }
