@@ -22,6 +22,7 @@ module.exports = merge(common, {
         { from: '404.html', to: '404.html' },
         { from: 'site.webmanifest', to: 'site.webmanifest' },
         { from: 'UrosVulovicCV2025.pdf', to: 'UrosVulovicCV2025.pdf' },
+        { from: 'fonts', to: 'fonts' },
       ],
     }),
   ],
