@@ -35,11 +35,16 @@
   <aside class="sidebar " data-sidebar>
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <picture>
-          <source srcset="/img/profile1_80.webp" media="(max-width: 579px)" type="image/webp">
-          <source srcset="/img/profile1_150.webp" type="image/webp">
-          <img class="avatar-profile-img" src="/img/profile1_150.webp" alt="avatar" width="150" height="150">
-        </picture>
+        <img
+          class="avatar-profile-img"
+          src="https://urosvulovic.com/img/profile1_150.webp"
+          srcset="
+    https://urosvulovic.com/img/profile1_80.webp 80w,
+    https://urosvulovic.com/img/profile1_150.webp 150w"
+          sizes="(max-width: 579px) 80px, 150px"
+          alt="avatar"
+          width="150"
+          height="150">
       </figure>
 
       <div class="info-content">
