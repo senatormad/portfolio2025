@@ -35,7 +35,7 @@
   <aside class="sidebar " data-sidebar>
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img class="avatar-profile-img" src="/img/profile1_150.webp" alt="avatar" width="150">
+        <img class="avatar-profile-img" src="/img/profile1_150.webp" alt="avatar" width="150" height="150">
       </figure>
 
       <div class="info-content">
@@ -43,7 +43,7 @@
         <p class="title">Full-Stack Developer</p>
       </div>
 
-      <button class="info-more-btn" data-sidebar-btn>
+      <button class="info-more-btn" aria-label="Show Contacts" data-sidebar-btn>
         <span>Show Contacts</span>
         <ion-icon name="chevron-down"></ion-icon>
       </button>
@@ -93,15 +93,21 @@
       <div class="separator"></div>
 
       <ul class="social-list">
-        <li class="social-item"><a href="https://www.linkedin.com/in/urošvulović/" class="social-link" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a></li>
-        <li class="social-item"><a href="https://www.instagram.com/senatormad/" class="social-link" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-        <li class="social-item"><a href="https://github.com/senatormad/" class="social-link" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a></li>
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/urošvulović/" class="social-link" target="_blank" aria-label="LinkedIn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.instagram.com/senatormad/" class="social-link" target="_blank" aria-label="Instagram">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://github.com/senatormad/" class="social-link" target="_blank" aria-label="GitHub">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
       </ul>
     </div>
   </aside>
@@ -340,19 +346,27 @@
 
         <ul class="clients-list has-scrollbar">
           <li class="clients-item">
-            <a href="https://taucommerce.com" target="_blank"><img src="/img/clients/tau.webp" alt="logo"></a>
+            <a href="https://taucommerce.com" target="_blank">
+              <img src="/img/clients/tau.webp" alt="tau commerce logo" width="140" height="142">
+            </a>
           </li>
 
           <li class="clients-item">
-            <a href="https://www.profil-klett.hr" target="_blank"><img src="/img/clients/pk.webp" alt="logo"></a>
+            <a href="https://www.profil-klett.hr" target="_blank">
+              <img src="/img/clients/pk.webp" alt="profil klet logo" width="127" height="64">
+            </a>
           </li>
 
           <li class="clients-item">
-            <a href="https://vajb.me" target="_blank"><img src="/img/clients/vajb.webp" alt="logo"></a>
+            <a href="https://vajb.me" target="_blank">
+              <img src="/img/clients/vajb.webp" alt="vajb magazine logo" width="140" height="38">
+            </a>
           </li>
 
           <li class="clients-item">
-            <a href="https://zimskinocni.com/" target="_blank"><img src="/img/clients/znm.webp" alt="logo"></a>
+            <a href="https://zimskinocni.com/" target="_blank">
+              <img src="/img/clients/znm.webp" alt="zimski nocni polumaraton logo" width="140" height="45">
+            </a>
           </li>
 
         </ul>
