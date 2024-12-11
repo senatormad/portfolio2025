@@ -1543,7 +1543,7 @@ textarea.form-input::-webkit-realizer {
   }
 
   .clients-item {
-    min-width: calc(33..33% - 35px);
+    min-width: calc(33% - 35px);
   }
 
   .timeline-list {
