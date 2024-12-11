@@ -664,6 +664,9 @@
       </section>
     </article>
   </div>
+  <% if (htmlWebpackPlugin.options.templateParameters.externalScripts) { %>
+  <%= htmlWebpackPlugin.options.templateParameters.externalScripts %>
+  <% } %>
 </main>
 </body>
 
