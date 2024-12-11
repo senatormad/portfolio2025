@@ -9,13 +9,25 @@ module.exports = merge(common, {
   optimization: {
     minimize: true,
     minimizer: [
-      '...', // This syntax extends existing minimizers (i.e. `terser-webpack-plugin`)
+      '...', // Extend existing minimizers (like `terser-webpack-plugin`)
       new CssMinimizerPlugin(),
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      inject: 'body',
+      scriptLoading: 'defer',  // Ensures proper script loading
+      cdnScripts: [            // Custom field to inject external scripts
+        {
+          type: 'module',
+          src: 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js',
+        },
+        {
+          nomodule: true,
+          src: 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js',
+        },
+      ],
     }),
     new CopyPlugin({
       patterns: [
