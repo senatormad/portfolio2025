@@ -10,6 +10,21 @@ module.exports = {
     clean: true,
     filename: 'js/[name].[contenthash].js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'], // Add this rule for CSS
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/, // Handle font files
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]',
+        },
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',

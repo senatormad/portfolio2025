@@ -1,4 +1,5 @@
 'use strict';
+import '../css/style.css';
 
 document.addEventListener('DOMContentLoaded', function () {
   // Utility functions for toggling classes

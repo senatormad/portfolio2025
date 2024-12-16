@@ -851,7 +851,7 @@ article.active {
 }
 
 .clients-item img {
-  width: 100%;
+  width: auto;
   max-height: 80px;
   filter: grayscale(1);
   transition: var(--transition1);
